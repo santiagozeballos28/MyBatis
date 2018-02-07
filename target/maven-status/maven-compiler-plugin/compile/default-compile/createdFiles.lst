@@ -1,0 +1,7 @@
+com\agendamybatis\config\MyBatisUtil.class
+com\agendamybatis\mappers\ContactoMapper.class
+com\agendamybatis\model\Contacto.class
+com\agendamybatis\logic\ContactoLogic.class
+com\agendamybatis\resources\ContactoResourse.class
+com\agendamybatis\resources\PizzaResourse.class
+com\agendamybatis\model\Pizza.class

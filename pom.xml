@@ -27,11 +27,11 @@
             <artifactId>mybatis</artifactId>
             <version>3.4.5</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+      <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.1</version>
+            <version>9.4-1204-jdbc41</version>
         </dependency>
      
         <dependency>
@@ -45,6 +45,13 @@
             <artifactId>jersey-server</artifactId>
             <version>2.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>2.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>junit</groupId>

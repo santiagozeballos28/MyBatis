@@ -1,1 +1,1 @@
-0:0:0:0:0:0:0:1 - - [07/Feb/2018:13:46:46 -0400] "GET /AgendaMyBatis/rest/Pizza HTTP/1.1" 200 39 http-bio-8181-exec-1 79
+0:0:0:0:0:0:0:1 - - [07/Feb/2018:17:31:39 -0400] "POST /AgendaMyBatis/rest/contactos HTTP/1.1" 415 1092 http-bio-8181-exec-1 80
