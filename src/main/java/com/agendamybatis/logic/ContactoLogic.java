@@ -33,4 +33,21 @@ public class ContactoLogic {
         return res;
     }
 
+    public Contacto get(int idContacto) {
+        SqlSession session = new MyBatisUtil().getSqlSession();
+        Contacto contacto = null;
+        if (session != null) {
+            try {
+                System.out.println("Contacto.getById: " +idContacto);
+                contacto = session.selectOne("Contacto.getById", idContacto);
+                session.commit();
+            } finally {
+                session.close();
+            }
+        } else {
+            System.out.println("Error.. to open Session");
+        }
+        return contacto;
+    }
+
 }

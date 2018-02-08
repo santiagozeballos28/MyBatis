@@ -1,2 +1,0 @@
-0:0:0:0:0:0:0:1 - - [07/Feb/2018:19:26:36 -0400] "GET /AgendaMyBatis/api/contactos HTTP/1.1" 200 65 http-bio-8181-exec-1 925
-0:0:0:0:0:0:0:1 - - [07/Feb/2018:19:27:04 -0400] "POST /AgendaMyBatis/api/contactos HTTP/1.1" 200 9 http-bio-8181-exec-2 355

@@ -7,56 +7,56 @@ package com.agendamybatis.model;
 public class Contacto {
 
     private int id;
-    private String nombre;
-    private String apellido;
-    private int numero;
+    private String firstName;
+    private String lastName;
+    private int number;
 
     public Contacto() {
     }
 
-    public Contacto(int id, String nombre, String apellido, int numero) {
+    public Contacto(int id, String firstName, String lastName, int number) {
         this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.numero = numero;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.number = number;
     }
 
-    public Contacto(String nombre, String apellido, int numero) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.numero = numero;
+    public Contacto(String firstName, String lastName, int number) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.number = number;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getLastName() {
+        return lastName;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getNumber() {
+        return number;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
 }

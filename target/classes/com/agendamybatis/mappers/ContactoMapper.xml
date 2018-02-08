@@ -3,14 +3,33 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.4.5//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Contacto"> 
-    <insert id="insertarContacto" useGeneratedKeys="true" keyProperty="id" parameterType="com.agendamybatis.model.Contacto">
+    <insert id="insertarContacto" useGeneratedKeys="true" keyProperty="contacto_id" parameterType="com.agendamybatis.model.Contacto">
         INSERT INTO CONTACTO(
         nombre, 
         apellido, 
-        numero)
+        numero,
+        create_date,
+        modifier_date)
         VALUES (
-        #{nombre}, 
-        #{apellido}, 
-        #{numero})
+        #{firstName}, 
+        #{lastName}, 
+        #{number},
+        current_timestamp,
+        null)
     </insert>
+    <resultMap id = "result" type = "com.agendamybatis.model.Contacto">
+        <result property = "id" column = "contacto_id"/>
+        <result property = "firstName" column = "nombre"/>
+        <result property = "lastName" column = "apellido"/>
+        <result property = "number" column = "numero"/>
+    </resultMap>
+
+    <select id = "getAll" resultMap = "result">
+        SELECT * FROM CONTACTO; 
+    </select>
+
+    <select id = "getById" parameterType = "int" resultMap = "result">
+        SELECT contacto_id,nombre,apellido,numero FROM CONTACTO WHERE contacto_id = #{idContacto};
+    </select>
+
 </mapper>
